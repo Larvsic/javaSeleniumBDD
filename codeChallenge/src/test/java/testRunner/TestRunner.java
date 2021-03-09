@@ -10,7 +10,6 @@ import cucumber.api.junit.Cucumber;
 		glue="stepDefinitions",
 		dryRun=false,
 		monochrome=true,
-		tags=@microsoft,
 		plugin= {"pretty","html:test-output"}
 		)
 
