@@ -1,0 +1,83 @@
+package stepDefinitions;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import pageObjects.LandingPage;
+
+public class Steps {
+	
+	public WebDriver driver;
+	public LandingPage landingPage;
+	
+	@Given("I launch {string}")
+	public void i_launch(String url) {
+	    System.setProperty("webdriver.chrome.driver",System.getProperty("user")+"//Drivers/chromedriver.exe");
+	    driver = new ChromeDriver();
+	    landingPage = new LandingPage(driver);
+	    driver.get(url);
+	}
+
+	@Then("User validate all menu items are present")
+	public void user_validate_all_menu_items_are_present() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("User go to Windows")
+	public void user_go_to_windows() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("User click on Windows 10 Menu")
+	public void user_click_on_windows_menu(Integer int1) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("User print all Elements in the dropdown")
+	public void user_print_all_elements_in_the_dropdown() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("User go to Search next to the shopping cart")
+	public void user_go_to_search_next_to_the_shopping_cart() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("User search for {string}")
+	public void user_search_for(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("Click on the first one to go to the details page")
+	public void click_on_the_first_one_to_go_to_the_details_page() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("Both prices should be the same")
+	public void both_prices_should_be_the_same() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("Click Add To Cart")
+	public void click_add_to_cart() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("Verify all {int} price amounts are the same")
+	public void verify_all_price_amounts_are_the_same(Integer int1) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="codeChallenge" tests="8" started="8" failures="0" errors="2" ignored="3">
+  <testsuite name="testRunner.TestRunner" time="13.217">
+    <testsuite name="Feature: Microsoft flow page" time="13.217">
+      <testsuite name="Scenario: Happy Path" time="13.041" incomplete="true">
+        <error>org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been "select" but was "button"
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MTYTM19083YZ1', ip: '192.168.0.193', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: driver.version: unknown&#13;
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:48)&#13;
+	at stepDefinitions.Steps.user_click_on_windows_menu(Steps.java:55)&#13;
+	at ✽.And User click on Windows 10 Menu(./Features/MicrosoftFlow.feature:8)&#13;
+&#13;
+</error>
+        <testcase name="Given I open Chrome" classname="Scenario: Happy Path" time="6.284"/>
+        <testcase name="Given I launch &quot;https://www.microsoft.com/en-us/&quot;" classname="Scenario: Happy Path" time="0.741"/>
+        <testcase name="Then User validate all menu items are present" classname="Scenario: Happy Path" time="5.314"/>
+        <testcase name="When User go to Windows" classname="Scenario: Happy Path" time="0.691"/>
+        <testcase name="And User click on Windows 10 Menu" classname="Scenario: Happy Path" time="0.011">
+          <error>org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been "select" but was "button"
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MTYTM19083YZ1', ip: '192.168.0.193', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: driver.version: unknown&#13;
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:48)&#13;
+	at stepDefinitions.Steps.user_click_on_windows_menu(Steps.java:55)&#13;
+	at ✽.And User click on Windows 10 Menu(./Features/MicrosoftFlow.feature:8)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="When User go to Search next to the shopping cart" classname="Scenario: Happy Path" time="0.002" ignored="true"/>
+        <testcase name="Then User search for &quot;Visual Studio&quot;" classname="Scenario: Happy Path" time="0.001" ignored="true"/>
+        <testcase name="Then Close browser" classname="Scenario: Happy Path" time="0.168" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

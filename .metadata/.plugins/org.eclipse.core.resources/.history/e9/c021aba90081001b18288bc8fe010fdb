@@ -1,0 +1,76 @@
+package pageObjects;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.junit.Assert;
+
+
+public class VisualStudioPage {
+	public WebDriver ldriver;
+	
+	//constructor to initialize driver
+	public VisualStudioPage(WebDriver rdriver) {
+		ldriver = rdriver;
+		PageFactory.initElements(rdriver, this);
+	}
+	
+	public String priceFromCatalog;
+	public String priceVisualValueCart;
+	public String priceVisualSelect;
+	
+	@FindBy(xpath= "/html/body/section/div[1]/div[1]/div[1]/div[2]/div[6]/div/div[1]/div/div/div[1]/span")
+	WebElement priceVisual;
+	
+	@FindBy(xpath= "//*[@id=\"email-newsletter-dialog\"]/div[3]/div[1]")
+	WebElement cancelPopup;
+	
+	@FindBy(xpath= "//span[@itemprop='price'][1]")
+	WebElement priceCatalog;
+	
+	@FindBy(id= "buttonPanel_AddToCartButton")
+	WebElement addCart;
+	
+	@FindBy(xpath= "//span[@itemprop='price'][1]")
+	WebElement priceVisualValue;
+	
+	public void priceVisualFirst() {
+		if (priceCatalog.isDisplayed()){
+			priceFromCatalog = priceCatalog.getText();
+		
+		}else{
+         System.out.println("Visual Studio Price is not displayed");
+     }
+            
+	}
+	
+	public void priceVisualSelect() {
+		if (priceVisual.isDisplayed()){
+			priceVisualSelect = priceVisual.getText();
+		
+		}else{
+         System.out.println("Visual Studio Price is not displayed");
+     }
+            
+	}
+	
+	  public void validateSamePrices(){
+	        Assert.assertTrue(priceVisual.getText().contains(priceFromCatalog));
+	    }
+	  
+	  public void validate3prices() {
+		  System.out.println("First Price: "+priceFromCatalog);
+		  System.out.println("Visual Select Price: "+ priceVisual);
+		  System.out.println("Visual Cart Price: "+ priceVisualValue.getText());
+		  Assert.assertTrue(priceFromCatalog.contains((CharSequence) priceVisual) && priceFromCatalog.contains(priceVisualValue.getText()));
+	  }
+	
+	public void cancelPopup() {
+		cancelPopup.click();
+	}
+	
+	public void addToCart() {
+		addCart.click();
+	}
+}

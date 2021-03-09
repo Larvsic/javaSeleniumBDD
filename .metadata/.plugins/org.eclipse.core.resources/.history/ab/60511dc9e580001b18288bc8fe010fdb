@@ -1,0 +1,126 @@
+package stepDefinitions;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+import cucumber.api.java.en.*;
+import junit.framework.Assert;
+import pageObjects.LandingPage;
+
+public class Steps {
+	
+	public WebDriver driver;
+	public LandingPage landingPage;
+	
+	
+	@Given("I open Chrome")
+	public void i_launch() throws InterruptedException {
+	    System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//Drivers/chromedriver.exe");
+		driver = new ChromeDriver();
+	    landingPage = new LandingPage(driver);
+	    driver.manage().window().maximize();
+	    Thread.sleep(3000);
+	}
+	
+	@Given("^I launch \"(.*?)\"$")
+	public void navigates_url(String url) throws InterruptedException {
+	    driver.get(url);
+	    Thread.sleep(3000);
+	}
+
+	@Then("User validate all menu items are present")
+	public void user_validate_all_menu_items_are_present() {
+		try {
+			landingPage.verifyMenu();
+		}catch(Exception e)
+		{
+			Assert.assertTrue(false);
+		}
+	}
+
+	@When("User go to Windows")
+	public void user_go_to_windows() {
+		landingPage.clickWindows();
+	}
+
+	@When("User click on Windows 10 Menu")
+	public void user_click_on_windows_menu() {
+		landingPage.clickWindows10();
+		System.out.println("--------------------- LIST --------\n");
+		Select dropdown = new Select(driver.findElement(By.id("c-shellmenu_54")));
+
+		    //Get all options
+		List<WebElement> dropDownList = dropdown.getOptions();
+
+		    //Get the length
+	   System.out.println(dropDownList.size());
+
+		    // Loop to print one by one
+	   for (int j = 0; j < dropDownList.size(); j++) {
+	        System.out.println(dropDownList.get(j).getText());
+
+		    }
+	}
+
+	@Then("User print all Elements in the dropdown")
+	public void user_print_all_elements_in_the_dropdown() {
+		
+	}
+
+	@When("User go to Search next to the shopping cart")
+	public void user_go_to_search_next_to_the_shopping_cart() {
+	    landingPage.clickSearch();
+	}
+
+	@Then("User search for \"(.*?)\"$")
+	public void user_search_for(String visual) {
+	   landingPage.search(visual);
+	   landingPage.clickSearch();
+	   landingPage.clickMexico();
+	}
+
+	@Then("Click on the first one to go to the details page and Validate prices")
+	public void click_on_the_first_one_to_go_to_the_details_page() throws InterruptedException {
+		List<WebElement> listOfElements = driver.findElements(By.xpath("//*[@class=\"c-price\"]/span/span[@itemprop=\"price\"]"));
+		Iterator<WebElement> itr = listOfElements.iterator();
+		while(itr.hasNext()) {
+		    System.out.println(itr.next().getText());
+		}
+		driver.findElement(By.xpath("(//div[@class='c-channel-placement-image'])[1]")).click();
+		List<WebElement> listPrice = driver.findElements(By.id("ProductPrice_productPrice_PriceContainer-0"));
+		Iterator<WebElement> list = listOfElements.iterator();
+		Thread.sleep(3000);
+		WebElement currElement = itr.next().getText();
+		WebElement priceelement = list.next().getText();
+		Assert.assertEquals(currElement,priceelement);
+	}
+
+	@Then("Validate prices should be the same")
+	public void both_prices_should_be_the_same() {
+	  
+	}
+
+	@When("Click Add To Cart")
+	public void click_add_to_cart() {
+	    
+	}
+
+	@Then("Verify all 3 price amounts are the same")
+	public void verify_all_price_amounts_are_the_same() {
+	    
+	}
+	
+	@Then("Close browser")
+	public void closingBrowser() {
+		driver.quit();
+	    
+	}
+
+}

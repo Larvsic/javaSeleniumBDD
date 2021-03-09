@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="codeChallenge" tests="8" started="8" failures="0" errors="2" ignored="1">
+  <testsuite name="testRunner.TestRunner" time="15.522">
+    <testsuite name="Feature: Microsoft flow page" time="15.522">
+      <testsuite name="Scenario: Happy Path" time="15.488" incomplete="true">
+        <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='c-channel-placement-image'])[1]"}
+  (Session info: chrome=89.0.4389.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MTYTM19083YZ1', ip: '192.168.0.193', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\LUISRA~1.VAZ\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:58167}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7aacbafcc7b29499c594a64363a49158
+*** Element info: {Using=xpath, value=(//div[@class='c-channel-placement-image'])[1]}&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at stepDefinitions.Steps.click_on_the_first_one_to_go_to_the_details_page(Steps.java:96)&#13;
+	at ✽.And Click on the first one to go to the details page and Validate prices(./Features/MicrosoftFlow.feature:12)&#13;
+&#13;
+</error>
+        <testcase name="Given I open Chrome" classname="Scenario: Happy Path" time="5.145"/>
+        <testcase name="Given I launch &quot;https://www.microsoft.com/en-us/&quot;" classname="Scenario: Happy Path" time="0.259"/>
+        <testcase name="Then User validate all menu items are present" classname="Scenario: Happy Path" time="6.011"/>
+        <testcase name="When User go to Windows" classname="Scenario: Happy Path" time="0.546"/>
+        <testcase name="When User go to Search next to the shopping cart" classname="Scenario: Happy Path" time="2.683"/>
+        <testcase name="Then User search for &quot;Visual Studio&quot;" classname="Scenario: Happy Path" time="0.832"/>
+        <testcase name="And Click on the first one to go to the details page and Validate prices" classname="Scenario: Happy Path" time="0.011">
+          <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='c-channel-placement-image'])[1]"}
+  (Session info: chrome=89.0.4389.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MTYTM19083YZ1', ip: '192.168.0.193', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\LUISRA~1.VAZ\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:58167}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7aacbafcc7b29499c594a64363a49158
+*** Element info: {Using=xpath, value=(//div[@class='c-channel-placement-image'])[1]}&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at stepDefinitions.Steps.click_on_the_first_one_to_go_to_the_details_page(Steps.java:96)&#13;
+	at ✽.And Click on the first one to go to the details page and Validate prices(./Features/MicrosoftFlow.feature:12)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="Then Close browser" classname="Scenario: Happy Path" time="0.03" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

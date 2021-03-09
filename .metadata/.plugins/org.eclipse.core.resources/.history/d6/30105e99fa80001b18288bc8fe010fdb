@@ -1,0 +1,72 @@
+package pageObjects;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.junit.Assert;
+
+
+public class VisualStudioPage {
+	public WebDriver ldriver;
+	
+	//constructor to initialize driver
+	public VisualStudioPage(WebDriver rdriver) {
+		ldriver = rdriver;
+		PageFactory.initElements(rdriver, this);
+	}
+	
+	public String priceFromCatalog;
+	public String priceVisualValueCart;
+	public String priceVisualSelect;
+	
+	@FindBy(xpath= "//div[@class='pi-price-text'][1]")
+	WebElement priceVisual;
+	
+	@FindBy(xpath= "//*[@id=\"email-newsletter-dialog\"]/div[3]/div[1]")
+	WebElement cancelPopup;
+	
+	@FindBy(xpath= "//span[@itemprop='price'][1]")
+	WebElement priceCatalog;
+	
+	@FindBy(id= "buttonPanel_AddToCartButton")
+	WebElement addCart;
+	
+	
+	public void priceVisualFirst() {
+		if (priceCatalog.isDisplayed()){
+			priceFromCatalog = priceCatalog.getText();
+		
+		}else{
+         System.out.println("Visual Studio Price is not displayed");
+     }
+            
+	}
+	
+	public void priceVisualFirst() {
+		if (priceCatalog.isDisplayed()){
+			priceFromCatalog = priceCatalog.getText();
+		
+		}else{
+         System.out.println("Visual Studio Price is not displayed");
+     }
+            
+	}
+	
+	  public void validateSamePrices(){
+	        Assert.assertTrue(priceVisual.getText().contains(priceFromCatalog));
+	    }
+	  
+	  public void validate3prices() {
+		  
+		  Assert.assertTrue(priceFromCatalog.getText().contains(priceVisualValueCart.getText()) && priceFromCatalog.getText().contains(priceFromCatalog.getText()));
+	  }
+	
+	public void cancelPopup() {
+		cancelPopup.click();
+	}
+	
+	public void addToCart() {
+		addCart.click();
+	}
+}

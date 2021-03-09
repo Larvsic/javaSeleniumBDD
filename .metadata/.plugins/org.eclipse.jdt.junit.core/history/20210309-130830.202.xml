@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="codeChallenge" tests="11" started="11" failures="0" errors="0" ignored="0">
+  <testsuite name="testRunner.TestRunner" time="55.885">
+    <testsuite name="Feature: Microsoft flow page" time="55.885">
+      <testsuite name="Scenario: Happy Path" time="55.885">
+        <testcase name="Given I open Chrome" classname="Scenario: Happy Path" time="5.837"/>
+        <testcase name="Given I launch &quot;https://www.microsoft.com/en-us/&quot;" classname="Scenario: Happy Path" time="0.811"/>
+        <testcase name="Then User validate all menu items are present" classname="Scenario: Happy Path" time="8.12"/>
+        <testcase name="When User go to Windows" classname="Scenario: Happy Path" time="0.988"/>
+        <testcase name="When User go to Search next to the shopping cart" classname="Scenario: Happy Path" time="11.911"/>
+        <testcase name="Then User search for &quot;Visual Studio&quot;" classname="Scenario: Happy Path" time="8.414"/>
+        <testcase name="And Click on the first one to go to the details page and Validate prices" classname="Scenario: Happy Path" time="3.12"/>
+        <testcase name="When Click Add To Cart" classname="Scenario: Happy Path" time="3.632"/>
+        <testcase name="Then Verify all 3 price amounts are the same" classname="Scenario: Happy Path" time="3.619"/>
+        <testcase name="Then Select 20 items" classname="Scenario: Happy Path" time="9.179"/>
+        <testcase name="Then Close browser" classname="Scenario: Happy Path" time="0.254"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

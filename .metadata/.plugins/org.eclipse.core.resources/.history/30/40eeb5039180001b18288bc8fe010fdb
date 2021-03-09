@@ -1,0 +1,84 @@
+package stepDefinitions;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import cucumber.api.java.en.*;
+import pageObjects.LandingPage;
+
+public class Steps {
+	
+	public WebDriver driver;
+	public LandingPage landingPage;
+	landingPage = new LandingPage(driver);
+	@Given("I open Chrome")
+	public void i_launch() throws InterruptedException {
+	    System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//Drivers/chromedriver.exe");
+		driver = new ChromeDriver();
+	    landingPage = new LandingPage(driver);
+	    driver.manage().window().maximize();
+	    Thread.sleep(3000);
+	}
+	
+	@Given("^I launch \"(.*?)\"$")
+	public void navigates_url(String url) throws InterruptedException {
+	    driver.get(url);
+	    Thread.sleep(3000);
+	}
+
+	@Then("User validate all menu items are present")
+	public void user_validate_all_menu_items_are_present() {
+	    
+	}
+
+	@When("User go to Windows")
+	public void user_go_to_windows() {
+	    
+	}
+
+	@When("User click on Windows 10 Menu")
+	public void user_click_on_windows_menu() {
+	   
+	}
+
+	@Then("User print all Elements in the dropdown")
+	public void user_print_all_elements_in_the_dropdown() {
+	
+	}
+
+	@When("User go to Search next to the shopping cart")
+	public void user_go_to_search_next_to_the_shopping_cart() {
+	    LandingPage.clickSearch();
+	}
+
+	@Then("User search for Visual Studio")
+	public void user_search_for(String visual) {
+	   LandingPage.search(visual);
+	   LandingPage.clickSearch();
+	}
+
+	@Then("Click on the first one to go to the details page")
+	public void click_on_the_first_one_to_go_to_the_details_page() {
+	    
+	}
+
+	@Then("Both prices should be the same")
+	public void both_prices_should_be_the_same() {
+	  
+	}
+
+	@When("Click Add To Cart")
+	public void click_add_to_cart() {
+	    
+	}
+
+	@Then("Verify all 3 price amounts are the same")
+	public void verify_all_price_amounts_are_the_same() {
+	    
+	}
+	
+	@Then("Close browser")
+	public void closingBrowser() {
+		driver.quit();
+	    
+	}
+
+}

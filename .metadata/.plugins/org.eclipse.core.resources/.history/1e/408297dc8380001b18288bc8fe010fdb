@@ -1,0 +1,36 @@
+package pageObjects;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+
+public class LandingPage {
+	public WebDriver driver;
+	
+	//constructor to initialize driver
+	public LandingPage(WebDriver driver) {
+		PageFactory.initElements(driver, this);
+	}
+	
+	//Elements locators
+	@FindBy(id="shellmenu_1") //Office
+	WebElement buttonOffice;
+	
+	@FindBy(id= "shellmenu_2") //Office
+	WebElement buttonWindows;
+	
+	@FindBy(id= "shellmenu_3") //Office
+	WebElement buttonSurface;
+	
+	@FindBy(id= "shellmenu_4") //Office
+	WebElement buttonXbox;
+	
+	@FindBy(id= "shellmenu_5") //Office
+	WebElement buttonDeals;
+	
+	@FindBy(id= "shellmenu_6") //Office
+	WebElement buttonSupport;
+	
+}

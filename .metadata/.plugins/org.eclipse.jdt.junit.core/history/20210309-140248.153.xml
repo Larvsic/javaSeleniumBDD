@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="codeChallenge" tests="13" started="13" failures="0" errors="2" ignored="1">
+  <testsuite name="testRunner.TestRunner" time="40.678">
+    <testsuite name="Feature: Microsoft flow page" time="40.678">
+      <testsuite name="Scenario: Happy Path" time="40.435" incomplete="true">
+        <error>java.lang.NullPointerException&#13;
+	at pageObjects.VisualStudioPage.ValidateNewTotal(VisualStudioPage.java:104)&#13;
+	at stepDefinitions.Steps.validateAmount(Steps.java:117)&#13;
+	at ✽.Then Validate new amount of price(./Features/MicrosoftFlow.feature:15)&#13;
+&#13;
+</error>
+        <testcase name="Given I open Chrome" classname="Scenario: Happy Path" time="5.339"/>
+        <testcase name="Given I launch &quot;https://www.microsoft.com/en-us/&quot;" classname="Scenario: Happy Path" time="0.69"/>
+        <testcase name="Then User validate all menu items are present" classname="Scenario: Happy Path" time="4.114"/>
+        <testcase name="When User go to Windows" classname="Scenario: Happy Path" time="4.672"/>
+        <testcase name="And User click on Windows 10 Menu and print values" classname="Scenario: Happy Path" time="0.219"/>
+        <testcase name="When User go to Search next to the shopping cart" classname="Scenario: Happy Path" time="8.141"/>
+        <testcase name="Then User search for &quot;Visual Studio&quot;" classname="Scenario: Happy Path" time="6.424"/>
+        <testcase name="And Click on the first one to go to the details page and Validate prices" classname="Scenario: Happy Path" time="3.153"/>
+        <testcase name="When Click Add To Cart" classname="Scenario: Happy Path" time="1.384"/>
+        <testcase name="Then Verify all 3 price amounts are the same" classname="Scenario: Happy Path" time="3.275"/>
+        <testcase name="Then Select 20 items" classname="Scenario: Happy Path" time="3.007"/>
+        <testcase name="Then Validate new amount of price" classname="Scenario: Happy Path" time="0.016">
+          <error>java.lang.NullPointerException&#13;
+	at pageObjects.VisualStudioPage.ValidateNewTotal(VisualStudioPage.java:104)&#13;
+	at stepDefinitions.Steps.validateAmount(Steps.java:117)&#13;
+	at ✽.Then Validate new amount of price(./Features/MicrosoftFlow.feature:15)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="Then Close browser" classname="Scenario: Happy Path" time="0.201" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

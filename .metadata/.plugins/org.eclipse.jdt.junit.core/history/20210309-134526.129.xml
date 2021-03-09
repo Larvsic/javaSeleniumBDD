@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="codeChallenge" tests="12" started="12" failures="0" errors="2" ignored="6">
+  <testsuite name="testRunner.TestRunner" time="9.628">
+    <testsuite name="Feature: Microsoft flow page" time="9.628">
+      <testsuite name="Scenario: Happy Path" time="9.176" incomplete="true">
+        <error>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=89.0.4389.82)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MTYTM19083YZ1', ip: '192.168.0.193', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\LUISRA~1.VAZ\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55403}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9239e4f4a391809180970efdc1e69aac&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)&#13;
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:124)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)&#13;
+	at com.sun.proxy.$Proxy16.clear(Unknown Source)&#13;
+	at pageObjects.LandingPage.search(LandingPage.java:76)&#13;
+	at stepDefinitions.Steps.user_search_for(Steps.java:88)&#13;
+	at ✽.Then User search for "Visual Studio"(./Features/MicrosoftFlow.feature:11)&#13;
+&#13;
+</error>
+        <testcase name="Given I open Chrome" classname="Scenario: Happy Path" time="7.7"/>
+        <testcase name="Given I launch &quot;https://www.microsoft.com/en-us/&quot;" classname="Scenario: Happy Path" time="0.909"/>
+        <testcase name="Then User validate all menu items are present" classname="Scenario: Happy Path" time="0.149"/>
+        <testcase name="When User go to Windows" classname="Scenario: Happy Path" time="0.162"/>
+        <testcase name="When User go to Search next to the shopping cart" classname="Scenario: Happy Path" time="0.231"/>
+        <testcase name="Then User search for &quot;Visual Studio&quot;" classname="Scenario: Happy Path" time="0.023">
+          <error>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=89.0.4389.82)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MTYTM19083YZ1', ip: '192.168.0.193', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\LUISRA~1.VAZ\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55403}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9239e4f4a391809180970efdc1e69aac&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)&#13;
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:124)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)&#13;
+	at com.sun.proxy.$Proxy16.clear(Unknown Source)&#13;
+	at pageObjects.LandingPage.search(LandingPage.java:76)&#13;
+	at stepDefinitions.Steps.user_search_for(Steps.java:88)&#13;
+	at ✽.Then User search for "Visual Studio"(./Features/MicrosoftFlow.feature:11)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="And Click on the first one to go to the details page and Validate prices" classname="Scenario: Happy Path" time="0.003" ignored="true"/>
+        <testcase name="When Click Add To Cart" classname="Scenario: Happy Path" time="0.003" ignored="true"/>
+        <testcase name="Then Verify all 3 price amounts are the same" classname="Scenario: Happy Path" time="0.003" ignored="true"/>
+        <testcase name="Then Select 20 items" classname="Scenario: Happy Path" time="0.004" ignored="true"/>
+        <testcase name="Then Validate new amount of price" classname="Scenario: Happy Path" time="0.003" ignored="true"/>
+        <testcase name="Then Close browser" classname="Scenario: Happy Path" time="0.421" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

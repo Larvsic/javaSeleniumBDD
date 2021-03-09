@@ -1,0 +1,15 @@
+@microsoft
+Feature: Microsoft flow page
+    Scenario: Happy Path
+        Given I launch "https://www.microsoft.com/en-us/"
+        Then Validate all menu items are present
+        When  Go to Windows
+        When  click on Windows 10 Menu
+        Then Print all Elements in the dropdown
+        When Go to Search next to the shopping cart
+        Then  Search for Visual Studio
+        When Click on the first one to go to the details page
+        Then validate both prices are the same
+        When Click Add To Cart
+        Then Verify all 3 price amounts are the same
+        

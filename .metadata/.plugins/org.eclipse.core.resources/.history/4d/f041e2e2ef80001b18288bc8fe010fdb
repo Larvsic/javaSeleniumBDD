@@ -1,0 +1,47 @@
+package pageObjects;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import junit.framework.Assert;
+
+public class VisualStudioPage {
+	public WebDriver ldriver;
+	
+	//constructor to initialize driver
+	public VisualStudioPage(WebDriver rdriver) {
+		ldriver = rdriver;
+		PageFactory.initElements(rdriver, this);
+	}
+	
+	public String price;
+	
+	@FindBy(id= "ProductPrice_productPrice_PriceContainer-0")
+	WebElement priceVisual;
+	
+	@FindBy(xpath= "//*[@id=\"email-newsletter-dialog\"]/div[3]/div[1]")
+	WebElement cancelPopup;
+	
+	@FindBy(xpath= "//*[@class='c-price']/span/span[@itemprop='price'[1]")
+	WebElement priceCatalog;
+	
+	public void priceVisual() {
+		if (priceVisual.isDisplayed()){
+            price = priceVisual.getText();
+		
+		}else{
+         System.out.println("Visual Studio Price is not displayed");
+     }
+            
+	}
+	
+	  public void validateSamePrices(){
+	        Assert.assertTrue(priceCatalog.getText().contains(price));
+	    }
+	
+	public void cancelPopup() {
+		cancelPopup.click();
+	}
+}

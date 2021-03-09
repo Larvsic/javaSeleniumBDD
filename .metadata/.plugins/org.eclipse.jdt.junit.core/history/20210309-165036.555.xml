@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="codeChallenge" tests="13" started="13" failures="0" errors="0" ignored="0">
+  <testsuite name="testRunner.TestRunner" time="54.307">
+    <testsuite name="Feature: Microsoft flow page" time="54.307">
+      <testsuite name="Scenario: Happy Path" time="54.307">
+        <testcase name="Given I open Chrome" classname="Scenario: Happy Path" time="6.139"/>
+        <testcase name="Given I launch &quot;https://www.microsoft.com/en-us/&quot;" classname="Scenario: Happy Path" time="1.18"/>
+        <testcase name="Then User validate all menu items are present" classname="Scenario: Happy Path" time="5.184"/>
+        <testcase name="When User go to Windows" classname="Scenario: Happy Path" time="7.798"/>
+        <testcase name="And User click on Windows 10 Menu and print values" classname="Scenario: Happy Path" time="0.269"/>
+        <testcase name="When User go to Search next to the shopping cart" classname="Scenario: Happy Path" time="8.19"/>
+        <testcase name="Then User search for &quot;Visual Studio&quot;" classname="Scenario: Happy Path" time="6.504"/>
+        <testcase name="And Click on the first one to go to the details page and Validate prices" classname="Scenario: Happy Path" time="3.12"/>
+        <testcase name="When Click Add To Cart" classname="Scenario: Happy Path" time="1.238"/>
+        <testcase name="Then Verify all 3 price amounts are the same" classname="Scenario: Happy Path" time="3.662"/>
+        <testcase name="Then Select 20 items" classname="Scenario: Happy Path" time="9.337"/>
+        <testcase name="Then Validate new amount of price" classname="Scenario: Happy Path" time="1.581"/>
+        <testcase name="Then Close browser" classname="Scenario: Happy Path" time="0.105"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="codeChallenge" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="testRunner.TestRunner" time="4.985">
+    <testsuite name="Feature: Microsoft flow page" time="4.985">
+      <testsuite name="Scenario: Happy Path" time="4.985">
+        <testcase name="Given I open Chrome" classname="Scenario: Happy Path" time="3.257"/>
+        <testcase name="Given I launch &quot;https://www.microsoft.com/en-us/&quot;" classname="Scenario: Happy Path" time="1.712"/>
+        <testcase name="Then Close browser" classname="Scenario: Happy Path" time="0.016"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

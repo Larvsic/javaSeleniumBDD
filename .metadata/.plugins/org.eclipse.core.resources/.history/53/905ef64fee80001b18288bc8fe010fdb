@@ -1,0 +1,37 @@
+package pageObjects;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class VisualStudioPage {
+	public WebDriver ldriver;
+	
+	//constructor to initialize driver
+	public VisualStudioPage(WebDriver rdriver) {
+		ldriver = rdriver;
+		PageFactory.initElements(rdriver, this);
+	}
+	
+	public String price;
+	
+	@FindBy(id= "ProductPrice_productPrice_PriceContainer-0")
+	WebElement priceVisual;
+	
+	@FindBy(xpath= "//*[@id=\"email-newsletter-dialog\"]/div[3]/div[1]")
+	WebElement cancelPopup;
+	
+	
+	
+	public void priceVisual() {
+		if (priceVisual.isDisplayed()){
+            price = priceVisual.getText();
+		}
+            
+	}
+	
+	public void cancelPopup() {
+		cancelPopup.click();
+	}
+}

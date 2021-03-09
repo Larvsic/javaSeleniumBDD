@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="codeChallenge" tests="5" started="5" failures="0" errors="2" ignored="2">
+  <testsuite name="testRunner.TestRunner" time="5.792">
+    <testsuite name="Feature: Microsoft flow page" time="5.792">
+      <testsuite name="Scenario: Happy Path" time="5.703" incomplete="true">
+        <error>java.lang.Error: Unresolved compilation problem: 
+	Cannot make a static reference to the non-static method clickSearch() from the type LandingPage
+&#13;
+	at stepDefinitions.Steps.user_go_to_search_next_to_the_shopping_cart(Steps.java:49)&#13;
+	at ✽.When User go to Search next to the shopping cart(./Features/MicrosoftFlow.feature:10)&#13;
+&#13;
+</error>
+        <testcase name="Given I open Chrome" classname="Scenario: Happy Path" time="5.688"/>
+        <testcase name="Given I launch &quot;https://www.microsoft.com/en-us/&quot;" classname="Scenario: Happy Path" time="0.004"/>
+        <testcase name="When User go to Search next to the shopping cart" classname="Scenario: Happy Path" time="0.011">
+          <error>java.lang.Error: Unresolved compilation problem: 
+	Cannot make a static reference to the non-static method clickSearch() from the type LandingPage
+&#13;
+	at stepDefinitions.Steps.user_go_to_search_next_to_the_shopping_cart(Steps.java:49)&#13;
+	at ✽.When User go to Search next to the shopping cart(./Features/MicrosoftFlow.feature:10)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="Then User search for Visual Studio" classname="Scenario: Happy Path" time="0.003" ignored="true"/>
+        <testcase name="Then Close browser" classname="Scenario: Happy Path" time="0.072" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

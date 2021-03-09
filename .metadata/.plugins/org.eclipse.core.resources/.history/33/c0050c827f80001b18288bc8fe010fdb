@@ -1,0 +1,11 @@
+package pageObjects;
+import org.openqa.selenium.WebDriver;
+
+
+public class LandingPage {
+	public WebDriver driver;
+	
+	public LandingPage(WebDrvier driver) {
+		PageFactory.initElements(driver, this);
+	}
+}

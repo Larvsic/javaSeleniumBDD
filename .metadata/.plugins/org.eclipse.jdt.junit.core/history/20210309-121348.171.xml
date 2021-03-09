@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="codeChallenge" tests="10" started="10" failures="0" errors="2" ignored="1">
+  <testsuite name="testRunner.TestRunner" time="30.635">
+    <testsuite name="Feature: Microsoft flow page" time="30.635">
+      <testsuite name="Scenario: Happy Path" time="30.304" incomplete="true">
+        <error>java.lang.ClassCastException: com.sun.proxy.$Proxy16 cannot be cast to java.lang.CharSequence&#13;
+	at pageObjects.VisualStudioPage.validate3prices(VisualStudioPage.java:66)&#13;
+	at stepDefinitions.Steps.verify_all_price_amounts_are_the_same(Steps.java:118)&#13;
+	at ✽.Then Verify all 3 price amounts are the same(./Features/MicrosoftFlow.feature:14)&#13;
+&#13;
+</error>
+        <testcase name="Given I open Chrome" classname="Scenario: Happy Path" time="5.373"/>
+        <testcase name="Given I launch &quot;https://www.microsoft.com/en-us/&quot;" classname="Scenario: Happy Path" time="0.885"/>
+        <testcase name="Then User validate all menu items are present" classname="Scenario: Happy Path" time="5.48"/>
+        <testcase name="When User go to Windows" classname="Scenario: Happy Path" time="0.444"/>
+        <testcase name="When User go to Search next to the shopping cart" classname="Scenario: Happy Path" time="7.865"/>
+        <testcase name="Then User search for &quot;Visual Studio&quot;" classname="Scenario: Happy Path" time="6.479"/>
+        <testcase name="And Click on the first one to go to the details page and Validate prices" classname="Scenario: Happy Path" time="3.156"/>
+        <testcase name="When Click Add To Cart" classname="Scenario: Happy Path" time="0.595"/>
+        <testcase name="Then Verify all 3 price amounts are the same" classname="Scenario: Happy Path" time="0.026">
+          <error>java.lang.ClassCastException: com.sun.proxy.$Proxy16 cannot be cast to java.lang.CharSequence&#13;
+	at pageObjects.VisualStudioPage.validate3prices(VisualStudioPage.java:66)&#13;
+	at stepDefinitions.Steps.verify_all_price_amounts_are_the_same(Steps.java:118)&#13;
+	at ✽.Then Verify all 3 price amounts are the same(./Features/MicrosoftFlow.feature:14)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="Then Close browser" classname="Scenario: Happy Path" time="0.313" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

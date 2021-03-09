@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="codeChallenge" tests="6" started="6" failures="0" errors="0" ignored="0">
+  <testsuite name="testRunner.TestRunner" time="11.178">
+    <testsuite name="Feature: Microsoft flow page" time="11.178">
+      <testsuite name="Scenario: Happy Path" time="11.178">
+        <testcase name="Given I open Chrome" classname="Scenario: Happy Path" time="4.977"/>
+        <testcase name="Given I launch &quot;https://www.microsoft.com/en-us/&quot;" classname="Scenario: Happy Path" time="0.001"/>
+        <testcase name="Then User validate all menu items are present" classname="Scenario: Happy Path" time="0.326"/>
+        <testcase name="When User go to Search next to the shopping cart" classname="Scenario: Happy Path" time="4.573"/>
+        <testcase name="Then User search for &quot;Visual Studio&quot;" classname="Scenario: Happy Path" time="1.28"/>
+        <testcase name="Then Close browser" classname="Scenario: Happy Path" time="0.021"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

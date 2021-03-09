@@ -1,0 +1,13 @@
+package pageObjects;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.CacheLookup;
+
+
+public class LandingPage {
+	public WebDriver driver;
+	
+	//consructor to initialize driver
+	public LandingPage(WebDrvier driver) {
+		PageFactory.initElements(driver, this);
+	}
+}
